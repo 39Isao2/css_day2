@@ -1,11 +1,11 @@
-# css_day2
 # レイアウト編
 
-# flexboxについて
+## flexboxについて
 
 
-## 横並びレイアウト
-<img src="images/flex.png" width="600px">
+### 横並びレイアウト
+<!--<img src="images/flex.png" width="600px">-->
+<img src="images/flex2.png" width="600px">
 
 ```
 CSSので要素を並列にレイアウトするためには、displayプロパティの値にflexを指定します。
@@ -21,6 +21,48 @@ center フレックスコンテナの主軸の幅の中央揃え。通常、左�
 space-between フレックスコンテナの主軸の幅に対し、余白を持った等間隔配置。
 space-around フレックスコンテナの主軸の幅に対し、余白を持った等間隔配置。起点や終点の間にも間隔が発生する。
 
+```
+
+サンプルコード
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            width: 200px;
+            height: 500px;
+            background: aquamarine;
+        }
+        .wrap{
+            width: 1500px;
+            display: flex;
+
+            /* 横列の配置 */
+            justify-content: space-between;
+
+            /* 上下の配置 */
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>flexboxの使い方</h1>
+
+    <div class="wrap">
+        <div><img src="images/img1.png"></div>
+        <div><img src="images/img2.png"></div>
+        <div><img src="images/img3.png"></div>
+        <p class="block">ブロック</p>
+    </div>
+    
+</body>
+</html>
 ```
 
 ## flexレイアウト内の垂直軸方向におけるコンテンツの揃え位置
