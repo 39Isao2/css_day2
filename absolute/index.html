@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 3000px;
+        }
+        .wrap{
+            width: 1200px;
+            height: 500px;
+            background: url("images/sea.jpg");
+            background-size: cover;
+
+            /* 起点にする*/
+            position: relative;
+        }
+
+        .hiyoko{
+            /* ポジションで相対配置 */
+            position: absolute;
+            top: 100px;
+            left: 500px;
+        }
+
+        .arrow{
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>positionの使い方</h1>
+
+    <div class="wrap">
+        <div class="hiyoko"><img src="images/hiyoko.png" alt="ひよこ"></div>
+        <div class="arrow"><img src="images/to_top.png" width="100px" alt="矢印"></div>
+    </div>
+    
+</body>
+</html>
