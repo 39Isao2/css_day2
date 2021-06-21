@@ -23,6 +23,21 @@ space-around フレックスコンテナの主軸の幅に対し、余白を持�
 
 ```
 
+## flexレイアウト内の垂直軸方向におけるコンテンツの揃え位置
+
+<img src="images/alineiteme.png" width="600px">
+
+```
+垂直軸方向におけるコンテンツの揃え位置を指定。（垂直方向におけるjustify-contentの様な役割）
+
+center 　項目を中央付近に配置
+flex-start 　フレックス項目を開始位置に配置
+flex-end 　フレックス項目を終了位置に配置
+baseline　フレックス項目を子要素のテキストのbaselineで合わせて配置
+stretch　子要素の高さが揃った初期設定
+
+```
+
 サンプルコード
 ```
 <!DOCTYPE html>
@@ -65,20 +80,7 @@ space-around フレックスコンテナの主軸の幅に対し、余白を持�
 </html>
 ```
 
-## flexレイアウト内の垂直軸方向におけるコンテンツの揃え位置
 
-<img src="images/alineiteme.png" width="600px">
-
-```
-垂直軸方向におけるコンテンツの揃え位置を指定。（垂直方向におけるjustify-contentの様な役割）
-
-center 　項目を中央付近に配置
-flex-start 　フレックス項目を開始位置に配置
-flex-end 　フレックス項目を終了位置に配置
-baseline　フレックス項目を子要素のテキストのbaselineで合わせて配置
-stretch　子要素の高さが揃った初期設定
-
-```
 
 ## positionの使い方
 
