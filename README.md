@@ -84,7 +84,7 @@ stretch　子要素の高さが揃った初期設定
 
 ## positionの使い方
 
-<img src="images/position.png" width="600px">
+<img src="images/position.png" width="700px">
 
 ```
 
