@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            width: 200px;
+            height: 500px;
+            background: aquamarine;
+        }
+        .wrap{
+            width: 1500px;
+            display: flex;
+
+            /* 横列の配置 */
+            justify-content: space-between;
+
+            /* 上下の配置 */
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>flexboxの使い方</h1>
+
+    <div class="wrap">
+        <div><img src="images/img1.png"></div>
+        <div><img src="images/img2.png"></div>
+        <div><img src="images/img3.png"></div>
+        <p class="block">ブロック</p>
+    </div>
+    
+</body>
+</html>
