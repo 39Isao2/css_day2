@@ -46,45 +46,47 @@ stretch　子要素の高さが揃った初期設定
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
-    <style>
-        .block{
-            width: 200px;
-            height: 500px;
-            background: aquamarine;
-        }
-        .wrap{
-            width: 1500px;
-            display: flex;
-
-            /* 横列の配置 */
-            justify-content: space-between;
-
-            /* 上下の配置 */
-            align-items: center;
-        }
-    </style>
 </head>
 <body>
 
-    <h1>flexboxの使い方</h1>
+<h1>flexboxの使い方</h1>
 
-    <div class="wrap">
-        <div><img src="images/img1.png"></div>
-        <div><img src="images/img2.png"></div>
-        <div><img src="images/img3.png"></div>
-        <p class="block">ブロック</p>
-    </div>
+<div class="wrap">
+    <div><img src="images/img1.png"></div>
+    <div><img src="images/img2.png"></div>
+    <div><img src="images/img3.png"></div>
+    <p class="block">ブロック</p>
+</div>
     
 </body>
 </html>
 ```
 
+style.css
+```
+    .block{
+        width: 200px;
+        height: 500px;
+        background: aquamarine;
+    }
+    .wrap{
+        width: 1500px;
+        display: flex;
+
+        /* 横列の配置 */
+        justify-content: space-between;
+
+        /* 上下の配置 */
+        align-items: center;
+    }
+```
 
 
 ## positionの使い方
 
-<img src="images/position.png" width="700px">
+<img src="images/sweet.png" width="700px">
 
 ```
 
@@ -107,56 +109,58 @@ left
 
 サンプルコード
 ```
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
-    <style>
-        body{
-            height: 3000px;
-        }
-        .wrap{
-            width: 1200px;
-            height: 500px;
-            background: url("images/sea.jpg");
-            background-size: cover;
-
-            /* 起点にする*/
-            position: relative;
-        }
-
-        .hiyoko{
-            /* ポジションで相対配置 */
-            position: absolute;
-            top: 100px;
-            left: 500px;
-        }
-
-        .arrow{
-            position: fixed;
-            right: 10px;
-            bottom: 10px;
-        }
-
-    </style>
 </head>
 <body>
 
     <h1>positionの使い方</h1>
 
-    <div class="wrap">
-        <div class="hiyoko"><img src="images/hiyoko.png" alt="ひよこ"></div>
-        <div class="arrow"><img src="images/to_top.png" width="100px" alt="矢印"></div>
+    <div class="cake_area">
+        <img src="images/sweets.png">
+        <img class="medal" src="images/medal.png">
     </div>
+        
+
+        <div class="arrow"><img src="images/to_top.png" width="50px" alt="矢印"></div>
+
+    
     
 </body>
 </html>
 
 ```
+
+style.css
+```
+body{
+    height: 3000px;
+}
+.cake_area{
+    /* 起点登録*/
+    position: relative;
+    width: 908px;
+}
+
+.medal{
+    position: absolute;
+    top: -50px;
+    right: -10px;
+}
+
+.arrow{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+```
+
 
 
 <!--
