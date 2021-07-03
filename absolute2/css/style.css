@@ -1,0 +1,20 @@
+body{
+    height: 3000px;
+}
+.cake_area{
+    /* 起点登録*/
+    position: relative;
+    width: 908px;
+}
+
+.medal{
+    position: absolute;
+    top: -50px;
+    right: -10px;
+}
+
+.arrow{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
