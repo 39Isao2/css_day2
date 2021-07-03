@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+/*----------------------------------------------
+初期設定
+-----------------------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+/*----------------------------------------------
+PC＋SP共通の設定　※768px以上
+-----------------------------------------------*/
+/* =======================
+#global-nav
+======================= */
+#global-nav {
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#global-nav ul {
+  width: 50%;
+  display: flex; /*子要素の横並びの設定*/
+  justify-content: space-around; 
+  list-style: none;/*リストの中黒を取る設定*/
+  padding: 12px;
+}
+
+#global-nav li a {
+   color:#fff;
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+
+/* main image */
+.main_image{
+  margin-bottom: 30px;
+}
+.main_image img{
+  width: 100%;
+  height: auto;
+}
+
+section {
+  width: 768px;
+  color: #333;
+  margin: 60px auto;
+}
+
+section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section div {
+  margin-right: 36px;
+  width: 50%;
+}
+
+section p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.8em;
+}
+
+#profile p{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+
+}
+#profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#profile img {
+  width: 100%;
+}
+
+
+/* photo */
+#photoArea #photo_list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#photoArea #photo_list li {
+  margin-bottom: 20px;
+}
+
+#photoArea #photo_list li a {
+  transition: 0.5s;
+}
+#photoArea #photo_list li a:hover {
+  opacity: 0.5;
+}
+
+#photoArea #photo_list img {
+  width: 240px;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 100;
+  padding: 6px 0;
+}
+
+
+
+@media (max-width: 768px) {
+  section{
+    width: 95%;
+  }
+  section#photoArea #photo_list li{
+    width: 45%;
+  }
+  section#photoArea #photo_list img{
+    width: 100%;
+  }
+  section h2{
+    font-size: 24px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------
+sp設定　768px以下の表示
+-----------------------------------------------*/
+/* @media (max-width: 768px) {
+
+  section{
+    padding: 12px;
+    margin: 40px auto;
+  }
+
+  section#profile {
+    display: block;
+  }
+
+  .sp_header{
+    display: block;
+  }
+  
+  section h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  section p {
+    font-size: 12px;
+  }
+
+
+  section#profile div {
+    width: 100%;
+  }
+
+  section#profile figure {
+    width: 100%;
+  }
+  section#content00 h2,
+  section#photoArea h2 {
+  }
+
+  section#photoArea #photo_list li {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 4px 6px;
+    margin-bottom: 0;
+  }
+
+  section#photoArea #photo_list img {
+    width: 100%;
+  }
+}768px END */
